@@ -3,12 +3,14 @@
 #include <stdio.h>
 /**
  * main - prints if a nuber is positive
- * Returns: Always (success)
+ * Return: Always (success)
+ *
  */
 
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -16,7 +18,7 @@ int main(void)
 	{
 	printf("%d is positive\n", n);
 	}
-	else if (n ==- 0)
+	else if (n == 0)
 	{
 	printf("%d is Zero\n", n);
 	}
